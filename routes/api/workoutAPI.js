@@ -49,7 +49,11 @@ router.put('/:id', async (req, res) => {
 
 router.get('/range', async (req, res) => {
   try {
-    const allWorkouts = await db.Workout.find({}).populate('exercises')
+    const allWorkouts = await db.Workout.find({}).sort(
+      {
+        day: -1
+      }
+    ).limit(7).populate('exercises')
 
     allWorkouts.forEach(workout => {
       workout.addUpDuration();
