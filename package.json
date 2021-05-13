@@ -1,0 +1,29 @@
+{
+  "name": "workout-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeders/seed.jsy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylercmac/workout-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.9.1",
+    "mongojs": "^2.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/tylercmac/workout-tracker/issues"
+  },
+  "homepage": "https://github.com/tylercmac/workout-tracker#readme"
+}
